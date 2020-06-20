@@ -42,6 +42,7 @@ namespace SeleniumNUnitParam
                 service.HideCommandPromptWindow = true;
                 service.SuppressInitialDiagnosticInformation = true;
                 Driver = new FirefoxDriver(service);
+                TimeSpan.FromSeconds(180);
             }
             else if(browserType == BrowerType.IE)
             {
